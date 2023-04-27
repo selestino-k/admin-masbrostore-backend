@@ -5,6 +5,8 @@ const {DataTypes} = Sequelize;
 
 const Userorder = db.define('userorder',{
     Email : DataTypes.STRING,
+    GameID : DataTypes.STRING,
+    ZoneID : DataTypes.STRING,
     Amount : DataTypes.STRING,
 },{
     freezeTableName:true
