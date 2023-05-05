@@ -4,7 +4,7 @@ GET  http://localhost:5000/userorder
 GET  http://localhost:5000/games
 ###
 
-GET http://localhost:5000/games/1
+GET  http://localhost:5000/gamepubgm
 ###
 
 GET  http://localhost:5000/userorder/3
