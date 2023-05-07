@@ -1,5 +1,6 @@
 import Gamelist from "../models/gamesModel.js";
 
+
 export const getGames = async(req,res) =>{
     try{
         const response = await Gamelist.findAll();
@@ -44,7 +45,10 @@ export const getGamesFF = async(req,res) =>{
         const response = await Gamelist.findAll({
             where:{
                 Game : 'FF'
-            }
+            },
+            order: [
+                
+            ]
         });
         
         res.status(200).json(response);
