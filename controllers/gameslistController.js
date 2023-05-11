@@ -1,5 +1,5 @@
 import Gamelist from "../models/gamesModel.js";
-
+import { Sequelize } from "sequelize";
 
 export const getGames = async(req,res) =>{
     try{
@@ -30,7 +30,10 @@ export const getGamesPUBGM = async(req,res) =>{
         const response = await Gamelist.findAll({
             where:{
                 Game : 'PUBGM'
-            }
+            },
+            order: [
+                [Sequelize.fn('length', Sequelize.col('Amount')), 'ASC']
+            ]
         });
         
         res.status(200).json(response);
@@ -47,7 +50,7 @@ export const getGamesFF = async(req,res) =>{
                 Game : 'FF'
             },
             order: [
-                
+                [Sequelize.fn('length', Sequelize.col('Amount')), 'ASC']
             ]
         });
         
@@ -62,7 +65,10 @@ export const getGamesMLBB = async(req,res) =>{
         const response = await Gamelist.findAll({
             where:{
                 Game : 'MLBB'
-            }
+            },
+            order: [
+                [Sequelize.fn('length', Sequelize.col('Amount')), 'ASC']
+            ]
         });
         
         res.status(200).json(response);

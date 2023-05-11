@@ -8,6 +8,7 @@ const Userorder = db.define('userorder',{
     GameID : DataTypes.STRING,
     ZoneID : DataTypes.STRING,
     Amount : DataTypes.STRING,
+    Game : DataTypes.STRING,
 },{
     freezeTableName:true
     
