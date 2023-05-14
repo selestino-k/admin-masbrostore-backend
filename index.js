@@ -15,5 +15,5 @@ app.listen(5000, ()=> console.log("Server running on port 5000") );
 
 app.all('/', (req, res) => {
     console.log("Tesrequest!")
-    res.send('Tes')
+    res.send('Tes API sukses')
 })
