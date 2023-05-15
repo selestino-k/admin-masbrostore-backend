@@ -1,8 +1,14 @@
 import {Sequelize} from 'sequelize';
 
-const db = new Sequelize('id20751401_topup_game','id20751401_masbro_topupgame','m@sbroDB23',{
-    host : 'databases.000webhost.com',
+const db = new Sequelize('topup_game','masbro','masbro-storekpg',{
+    host : '209.97.172.239',
     dialect : 'mysql',
 });
+
+// const db = new Sequelize('topup_game','root','',{
+//     host : 'localhost',
+//     dialect : 'mysql',
+// });
+
 
 export default db;
