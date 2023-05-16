@@ -18,7 +18,10 @@ Content-Type: application/json
 
 {
     "Email" : "sandikroon23@gmail.com",
-    "Amount" : "Digital Ocean TEST"
+    "GameID":"'1122223333'",
+    "ZoneID" :"'222'",
+    "Amount" : "Digital Ocean TEST",
+    "Game" : "PUBGM"
 }
 
 ###
