@@ -14,6 +14,6 @@ app.use(gameslistRoute);
 app.listen(5000, ()=> console.log("Server running on port 5000") );
 
 app.all('/', (req, res) => {
-    console.log("Tesrequest!")
+    console.log("Tes request sukses!")
     res.send('Tes API sukses')
 })

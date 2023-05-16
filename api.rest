@@ -1,3 +1,6 @@
+GET  http://localhost:5000/
+###
+
 GET  http://localhost:5000/userorder
 ###
 
@@ -15,7 +18,7 @@ Content-Type: application/json
 
 {
     "Email" : "sandikroon23@gmail.com",
-    "Amount" : "50 UC"
+    "Amount" : "Digital Ocean TEST"
 }
 
 ###
