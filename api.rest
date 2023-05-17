@@ -4,7 +4,11 @@ GET  http://localhost:5000/
 GET  http://localhost:5000/userorder
 ###
 
-GET  http://localhost:5000/games
+GET  https://rich-teal-turkey-veil.cyclic.app/userorder
+
+###
+GET  https://rich-teal-turkey-veil.cyclic.app/games
+
 ###
 
 GET  http://localhost:5000/gamepubgm
@@ -13,14 +17,26 @@ GET  http://localhost:5000/gamepubgm
 GET  http://localhost:5000/userorder/3
 ###
 
-POST http://localhost:5000/userorder/
+POST http://rich-teal-turkey-veil.cyclic.app/userorder
 Content-Type: application/json
 
 {
     "Email" : "sandikroon23@gmail.com",
-    "GameID":"'1122223333'",
-    "ZoneID" :"'222'",
+    "GameID":"456456",
+    "ZoneID" :"",
     "Amount" : "Digital Ocean TEST",
+    "Game" : "PUBGM"
+}
+###
+
+POST https://rich-teal-turkey-veil.cyclic.app/userorder
+Content-Type: application/json
+
+{
+    "Email" : "sandikroon23@gmail.com",
+    "GameID":"'829978013'",
+    "ZoneID" :"",
+    "Amount" : "Digital Ocean DB TEST",
     "Game" : "PUBGM"
 }
 

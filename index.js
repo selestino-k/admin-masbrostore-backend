@@ -14,6 +14,7 @@ app.use(gameslistRoute);
 app.listen(5000, ()=> console.log("Server running on port 5000") );
 
 app.all('/', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
     console.log("Tes request sukses!")
     res.send('Tes API sukses')
 })
