@@ -9,7 +9,6 @@ const app = express();
 app.use(cors(
     {
         origin :"*",
-        credentials : true,
         methods :["GET","POST","PATCH","DELETE"],
     }
 ));
