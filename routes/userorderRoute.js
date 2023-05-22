@@ -9,7 +9,4 @@ router.post('/userorder/',createUser);
 router.patch('/userorder/:id',updateUser);
 router.delete('/userorder/:id',deleteUser);
  
-
-
-
 export default router;
