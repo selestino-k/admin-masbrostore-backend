@@ -6,7 +6,7 @@ import gameslistRoute from './routes/gameslistRoute.js';
 
 const app = express();
 app.use(cors({
-    origin: ['https://rich-teal-turkey-veil.cyclic.app/','https://masbro-store.vercel.app/']
+    origin: '*'
 }));
 app.use(express.json());
 app.use(userorderRoute);
